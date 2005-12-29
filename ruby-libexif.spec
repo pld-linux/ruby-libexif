@@ -9,9 +9,9 @@ Source0:	http://tam.0xfa.com/ruby-libexif/pkg/%{name}-%{version}.tar.gz
 # Source0-md5:	39374f7b99a55da6618bfa3c8e163f5c
 URL:		http://tam.0xfa.com/ruby-libexif/
 BuildRequires:	libexif-devel
-BuildRequires:	rpmbuild(macros) >= 1.263
+BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-devel
-Requires:	ruby-modules
+%ruby_mod_ver_requires_eq
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
